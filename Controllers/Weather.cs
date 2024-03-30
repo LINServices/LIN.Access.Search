@@ -1,5 +1,5 @@
 ﻿using LIN.Access.Search;
-using LIN.Access.Services;
+using Global.Http.Services;
 using LIN.Types.Responses;
 using System.Threading.Tasks;
 
