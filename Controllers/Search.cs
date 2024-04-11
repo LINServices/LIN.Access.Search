@@ -11,6 +11,23 @@ public static class Search
 
 
   
+    public static async Task<ReadOneResponse<LIN.Types.Exp.Search.Models.Movie>> Movie(string term)
+    {
+
+        // Cliente.
+        Client client = Service.GetClient("movies");
+
+        // Parámetros.
+        client.AddParameter("movie", term);
+
+        // Respuesta.
+        var response = await client.Get<ReadOneResponse<LIN.Types.Exp.Search.Models.Movie>>();
+
+        return response;
+    }
+
+
+
     public static async Task<ReadAllResponse<LIN.Types.Exp.Search.Models.SearchResult>> Get(string term)
     {
 
