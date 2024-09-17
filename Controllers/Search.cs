@@ -1,5 +1,4 @@
-﻿using LIN.Access.Search;
-using Global.Http.Services;
+﻿using Global.Http.Services;
 using LIN.Types.Responses;
 using System.Threading.Tasks;
 
@@ -10,7 +9,7 @@ public static class Search
 {
 
 
-  
+
     public static async Task<ReadOneResponse<LIN.Types.Exp.Search.Models.Movie>> Movie(string term)
     {
 
