@@ -1,6 +1,5 @@
 ﻿namespace LIN.Access.Search;
 
-
 public class Build
 {
 

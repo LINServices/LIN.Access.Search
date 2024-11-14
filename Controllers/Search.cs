@@ -1,15 +1,12 @@
-﻿using Global.Http.Services;
-using LIN.Types.Responses;
-using System.Threading.Tasks;
-
-namespace LIN.Access.Search.Controllers;
-
+﻿namespace LIN.Access.Search.Controllers;
 
 public static class Search
 {
 
-
-
+    /// <summary>
+    /// Obtener información de una pelicula.
+    /// </summary>
+    /// <param name="term">Termino de búsqueda.</param>
     public static async Task<ReadOneResponse<LIN.Types.Exp.Search.Models.Movie>> Movie(string term)
     {
 
@@ -26,7 +23,10 @@ public static class Search
     }
 
 
-
+    /// <summary>
+    /// Buscar en general.
+    /// </summary>
+    /// <param name="term">Termino de búsqueda.</param>
     public static async Task<ReadAllResponse<LIN.Types.Exp.Search.Models.SearchResult>> Get(string term)
     {
 
@@ -41,6 +41,5 @@ public static class Search
 
         return response;
     }
-
 
 }
