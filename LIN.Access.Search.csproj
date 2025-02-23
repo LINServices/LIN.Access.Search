@@ -7,6 +7,6 @@
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="Global.Http" Version="3.3.0" />
-		<PackageReference Include="LIN.Types.Exp.Search" Version="1.4.0" />
+		<PackageReference Include="LIN.Types.Exp.Search" Version="1.5.0" />
 	</ItemGroup>
 </Project>
